@@ -1,4 +1,4 @@
-alert("Hej JavaScript");
+/**alert("Hej JavaScript");
 
 console.log("Hello console!");
 
@@ -67,4 +67,70 @@ students.pop(); //pop tar bort det sista ur listan
 
 students.shift(); //shift tar bort det första ur listan
 
-students.unshift(Super-Man); //unshift lägger till först i listan
+students.unshift(Super-Man); //unshift lägger till först i listan 
+
+
+
+//Comparisons
+
+const minAge = 18;
+const maxAge = 65;
+
+let age = 65;
+
+console.log("Is age greater than minAge?", age > minAge); //jämförelse, är 65 större än 18? en sådan jämförelse kan bara bli true eller false
+
+console.log ("Is age greater than OR equal to minAge?", age >= minAge); //jämförelse, större än eller lika med >= (greater than OR equal to)
+
+console.log("Is age less than maxAge?", age < maxAge);
+
+console.log("Is age the same as maxAge?", age == maxAge); //två likamed (double equals) jämför, ett enkelt = hade ersatt värdet i age
+
+console.log("Is age NOT the same as minAge?" , age != minAge); // ! är logical NOT != betyder not equals to
+
+//loose comparisons (different datatyps (ex sträng, tal etc) can still be equal)
+age  = 25;
+
+console.log('age == 25', age == 25);
+
+//strict comparisons (different datatypes CAN NOT be equal)
+console.log('age === 25', age === 25);
+
+*/
+
+//control flow
+
+const minAge = 18;
+const maxAge = 65;
+
+let age = 15;
+
+if (age > minAge) {
+    console.log("Access granted"); //true
+} else {
+    console.log("You're too young");   //false
+
+}
+
+console.log("Program end");
+
+age = 67 ;
+
+// && = AND (both has to be true)
+
+if (age >= minAge && age <= maxAge) {
+    //true
+    console.log("Access granted");
+} else {
+    //false
+    console.log("You're too young");
+}
+
+console.log("Program end");
+
+let username = "dave";
+if (username === "dave" || username === "johan") {
+    console.log(`I'm sorry ${username}, I can't open the doors.`);
+} else {
+    console.log("Welcome!");
+}
